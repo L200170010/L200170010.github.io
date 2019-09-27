@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tugas Sistem Manajemen Basisdata</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="index.html" class="scrollto">HOME</a></h1>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="#about">DDL</a></li>
+          <li><a href="#features">DML</a></li>
+          <li><a href="#pricing">SQL</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+
+    <div class="intro-text">
+      <br><br><br><br><br><br><br>
+      <h2>Selamat Datang</h2>
+      <h2>欢迎</h2>
+      <h2>ようこそ</h2>
+      <a href="#about" class="btn-get-started scrollto">Lets Get Started</a>
+    </div>
+
+  </section>
+
+  <main id="main">
+
+    <!--==========================
+      DDL
+    ============================-->
+    <section id="about" class="section-bg">
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-8 offset-lg-4">
+          <div class="section-header wow fadeIn" data-wow-duration="2s">
+            <h3 class="section-title">DDL</h3>
+            <span class="section-divider"></span>
+            <p align="justify">
+              DDL - Data Definition Language 
+              merupakan kumpulan perintah SQL yang digunakan untuk membuat, 
+              mengubah dan menghapus struktur dan definisi metadata dari 
+              objek-objek database.
+            </p>
+            <p align="justify">
+              Seperti definisi yang telah dijelaskan di atas, 
+              DDL adalah kumpulan perintah SQL yang digunakan untuk membuat (create), 
+              mengubah (alter) dan menghapus (drop) struktur dan definisi tipe data 
+              dari objek-objek database.
+            </p>
+            <p>
+              Objek-objek database yang dimaksud pada MySQL adalah sebagai berikut :
+              <ul>
+                <li>Database</li>
+                <li>Table</li>
+                <li>View</li>
+                <li>Index</li>
+                <li>Procedure (Stored Procedure)</li>
+                <li>Function</li>
+                <li>Trigger</li>
+              </ul>
+            </p> 
+          <p>
+            Contoh :
+            <table border="2">
+              <tr>
+                <td>
+                    <div class="sites-codeblock sites-codesnippet-block"><font face="monospace" size="3"><span style="line-height:18px"><span style="color:rgb(153,0,153)"><span style="color:rgb(128,128,128);font-style:italic">-- Perintah berikut akan membuat table pada database kita dengan nama "ms_karyawan"</span><br>
+                      CREATE</span><font color="#181818">&nbsp;</font><span style="color:rgb(153,0,153)">TABLE</span><font color="#181818">&nbsp;</font><span style="color:rgb(0,128,0)">ms<span style="color:rgb(0,128,128)">_</span>karyawan</span><font color="#181818">&nbsp;</font><span><font color="#FF00FF">(</font><br>
+                      <font color="#008000"><span style="color:rgb(24,24,24)">&nbsp;&nbsp;<span style="color:rgb(0,128,0)">kode<span style="color:rgb(0,128,128)">_</span>cabang</span>&nbsp;<span style="color:rgb(153,153,0)">varchar</span><span style="color:rgb(255,0,255)">(</span>10<span style="color:rgb(255,0,255)">)</span>&nbsp;<span style="color:rgb(153,0,153)">default</span>&nbsp;<span style="color:rgb(153,0,255)">NULL</span><span style="color:rgb(0,0,51)">,<br>
+                      <span style="color:rgb(24,24,24)">&nbsp;&nbsp;<span style="color:rgb(0,128,0)">kode<span style="color:rgb(0,128,128)">_</span>karyawan</span>&nbsp;<span style="color:rgb(153,153,0)">varchar</span><span style="color:rgb(255,0,255)">(</span>10<span style="color:rgb(255,0,255)">)</span>&nbsp;<span style="color:rgb(204,0,153)">NOT</span>&nbsp;<span style="color:rgb(153,0,255)">NULL</span><span style="color:rgb(0,0,51)">,<br>
+                      <span style="color:rgb(24,24,24)">&nbsp;&nbsp;<span style="color:rgb(0,128,0)">nama<span style="color:rgb(0,128,128)">_</span>depan</span>&nbsp;<span style="color:rgb(153,153,0)">varchar</span><span style="color:rgb(255,0,255)">(</span>8<span style="color:rgb(255,0,255)">)</span>&nbsp;<span style="color:rgb(153,0,153)">default</span>&nbsp;<span style="color:rgb(153,0,255)">NULL</span><span style="color:rgb(0,0,51)">,<br>
+                      <span style="color:rgb(24,24,24)">&nbsp;&nbsp;<span style="color:rgb(0,128,0)">nama<span style="color:rgb(0,128,128)">_</span>belakang</span>&nbsp;<span style="color:rgb(153,153,0)">varchar</span><span style="color:rgb(255,0,255)">(</span>9<span style="color:rgb(255,0,255)">)</span>&nbsp;<span style="color:rgb(153,0,153)">default</span>&nbsp;<span style="color:rgb(153,0,255)">NULL</span><span style="color:rgb(0,0,51)">,<br>
+                      <span style="color:rgb(24,24,24)">&nbsp;&nbsp;<span style="color:rgb(0,128,0)">jenis<span style="color:rgb(0,128,128)">_</span>kelamin</span>&nbsp;<span style="color:rgb(153,153,0)">varchar</span><span style="color:rgb(255,0,255)">(</span>1<span style="color:rgb(255,0,255)">)</span>&nbsp;<span style="color:rgb(153,0,153)">default</span>&nbsp;<span style="color:rgb(153,0,255)">NULL</span><span style="color:rgb(0,0,51)">,<br>
+                      <span style="color:rgb(24,24,24)">&nbsp;&nbsp;<span style="color:rgb(153,0,153)">PRIMARY KEY</span>&nbsp;&nbsp;<span style="color:rgb(255,0,255)">(</span><span style="color:rgb(0,128,0)">kode<span style="color:rgb(0,128,128)">_</span>karyawan</span><span style="color:rgb(255,0,255)">)<br>
+                      )</span></span></span></span></span></span></span></span></span></span></span></span></font></span></span></font></div>
+            </td></tr></table>
+          </p>
+          <p>
+            <b>Daftar Perintah DDL pada MySQL 5.0</b><br>
+            Berikut adalah contoh perintah DDL yang digunakan pada MySQL.
+            <ul>
+              <li>
+                <b>Pembuatan (CREATE)</b>
+                <ul>
+                  <li>CREATE DATABASE</li>
+                  <li>CREATE FUNCTION</li>
+                  <li>CREATE INDEX</li>
+                  <li>CREATE PROCEDURE</li>
+                  <li>CREATE TABLE</li>
+                  <li>CREATE TRIGGER</li>
+                  <li>CREATE VIEW</li>
+                </ul></li><br>
+              <li>
+                <b>Perubahan (ALTER & RENAME)</b>
+                <ul>
+                  <li>ALTER DATABASE</li>
+                  <li>ALTER FUNCTION</li>
+                  <li>ALTER PROCEDURE</li>
+                  <li>ALTER TABLE</li>
+                  <li>ALTER VIEW</li>
+                  <li>RENAME TABLE</li>
+                </ul></li><br>
+                <li>
+                  <b>Penghapusan (DROP)</b>
+                  <ul>
+                    <li>DROP DATABASE</li>
+                    <li>DROP FUNCTION</li>
+                    <li>DROP INDEX</li>
+                    <li>DROP PROCEDURE</li>
+                    <li>DROP TABLE</li>
+                    <li>DROP TRIGGER</li>
+                    <li>DROP VIEW</li>
+                  </ul>
+                </li>
+            </ul>
+          </p>
+        </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      DML
+    ============================-->
+    <section id="features">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8 offset-lg-4">
+            <div class="section-header wow fadeIn" data-wow-duration="2s">
+              <h3 class="section-title">DML</h3>
+              <span class="section-divider"></span>
+            
+            <p align="justify">
+              DML sendiri adalah kumpulan perintah SQL yang berhubungan dengan pekerjaan 
+              mengolah data di dalam table - dan tidak terkait dengan perubahan struktur dan 
+              definisi tipe data dari objek database seperti table, column, dan sebagainya.
+            </p>
+            <p>
+              <b>Contoh DML : Mengambil Seluruh Row Data dari table MS_KARYAWAN</b>
+              <table border="2">
+                <tr>
+                  <td>
+                      <div class="sites-codeblock sites-codesnippet-block">
+                          <div style="text-align:-webkit-auto"><font face="monospace" size="3"><span style="font-family:Arial,Verdana,sans-serif;line-height:normal"><span style="font-family:monospace"><font face="arial, sans-serif"><span style="font-family:Courier New"><font color="#0000FF"><span style="color:rgb(24,24,24);font-family:monospace;line-height:18px"><span style="color:rgb(153,0,153)">SELECT</span>&nbsp;<span style="color:rgb(204,0,153)">*&nbsp;</span></span><br>
+                          </font><span style="font-family:monospace;color:rgb(24,24,24);line-height:18px"><span style="color:rgb(153,0,153)">FROM</span>&nbsp;<span style="color:rgb(0,128,0)">ms<span style="color:rgb(0,128,128)">_</span>karyawan</span></span></span></font></span></span></font></div>
+                          <div style="text-align:-webkit-auto"></div>
+                          </div>
+                  </td>
+                </tr>
+              </table>
+              <b>Contoh DML : Memasukkan data ke dalam tabel ms_karyawan</b>
+              <table border="2">
+                <tr>
+                  <td>
+                      <div class="sites-codeblock sites-codesnippet-block"><font color="#006000" face="monospace" size="3"><span style="color:rgb(24,24,24);line-height:18px"><span style="color:rgb(153,0,153)">INSERT</span>&nbsp;<span style="color:rgb(153,0,153)">INTO</span>&nbsp;<span style="color:rgb(0,128,0)">ms<span style="color:rgb(0,128,128)">_</span>karyawan</span><span style="color:rgb(255,0,255)">(<br>
+                        <span style="color:rgb(24,24,24)">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<span style="color:rgb(0,128,0)">kode<span style="color:rgb(0,128,128)">_</span>cabang</span><span style="color:rgb(0,0,51)">,<br>
+                        <span style="color:rgb(24,24,24)">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<span style="color:rgb(0,128,0)">kode<span style="color:rgb(0,128,128)">_</span>karyawan</span><span style="color:rgb(0,0,51)">,<br>
+                        <span style="color:rgb(24,24,24)">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<span style="color:rgb(0,128,0)">nama<span style="color:rgb(0,128,128)">_</span>depan</span><span style="color:rgb(0,0,51)">,<br>
+                        <span style="color:rgb(24,24,24)">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<span style="color:rgb(0,128,0)">nama<span style="color:rgb(0,128,128)">_</span>belakang</span><span style="color:rgb(0,0,51)">,<br>
+                        <span style="color:rgb(24,24,24)">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<span style="color:rgb(0,128,0)">jenis<span style="color:rgb(0,128,128)">_</span>kelamin</span><span style="color:rgb(255,0,255)">)</span>&nbsp;<br>
+                        <span style="color:rgb(153,0,153)">VALUES</span>&nbsp;<span style="color:rgb(255,0,255)">(</span><span style="color:rgb(0,128,0)">'cab-001'</span><span style="color:rgb(0,0,51)">,</span><span style="color:rgb(0,128,0)">'kar-001'</span>
+                        <span style="color:rgb(0,0,51)">,</span><span style="color:rgb(0,128,0)">'Feris'</span><span style="color:rgb(0,0,51)">,</span><span style="color:rgb(0,128,0)">'Thia'</span><span style="color:rgb(0,0,51)">,</span><span style="color:rgb(0,128,0)">'Laki-laki'</span>
+                        <span style="color:rgb(255,0,255)">)</span><span style="color:rgb(0,0,51)">;</span></span></span></span></span></span></span></span></span></span></span></span></font></div>
+                  </td>
+                </tr>
+              </table>
+            </p>
+            <p>
+              <b>Beberapa daftar Perintah DML MySQL 5.0</b>
+              <ul>
+                <li>CALL</li>
+                <li>DELETE</li>    
+                <li>DO</li>
+                <li>HANDLER</li>
+                <li>INSERT</li>
+                <li>LOAD DATA INFILE</li>
+                <li>REPLACE</li>
+                <li>SELECT</li>
+                <li>TRUNCATE</li>
+                <li>UPDATE</li>
+              </ul>
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+      SQL
+    ============================-->
+    <section id="pricing" class="section-bg">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 offset-lg-4">
+                  <div class="section-header wow fadeIn" data-wow-duration="2s">
+                    <h3 class="section-title">SQL</h3>
+                    <span class="section-divider"></span>
+                    <p align="justify">
+                      SQL (Structured Query Language) adalah bahasa yang di gunakan dalam pemrograman 
+                      dan di rancang untuk mengelola data yang tersimpan dalam Sistem Manajemen Database 
+                      Relasional (Relational Database Management System, RDBMS), 
+                      atau untuk stream processing dalam Relational Data Stream Management System (RDSMS).
+                    </p>
+                    <p align="justify">
+                      Salah satu dari fungsi database adalah menyimpan dan memelihara serta mengelola data, 
+                      oleh karena itu penting bagi kita untuk mengetahui perintah dasar SQL yang dapat di 
+                      gunakan untuk menyimpan dan memelihara serta mengelola data dalam database tersebut 
+                      baik secara langsung maupun menggunakan macam-macam bahasa pemrograman.
+                    </p>
+                    
+                    <b>Perintah Dasar SQL</b><br>
+                    <b>>Perintah SELECT</b><br>
+                    <p align="justify">Perintah SELECT merupakan perintah dasar SQL yang di gunakan untuk memilih data dari 
+                    database. Data yang di kembalikan di simpan dalam tabel yang di sebut result-set.</p><br>
+                    Contoh:
+                    <pre>SELECT nis, nama, alamat FROM siswa;</pre>
+                    Atau:
+                    <pre>SELECT * FROM siswa;</pre>
+                    <p align="justify">Perintah pertama di atas di gunakan untuk menyeleksi kolom NIS, NAMA, dan ALAMAT 
+                    dari tabel SISWA. sedangkan perintah kedua di gunakan untuk menyeleksi semua kolim dari 
+                    tabel SISWA.</p>
+                    <b>>Perintah SELECT DISTINCT</b>
+                    <p align="justify">Perintah SELECT DISTINCT merupakan perintah dasar SQL yang di gunakan untuk 
+                    mengembalikan hanya nilai yang berbeda dari dalam sebuah tabel, dengan kata lain 
+                    semua record duplikat (record dengan nilai yang sama) yang terdapat pada tabel akan 
+                    di anggap sebagai satu record/nilai.</p>
+                    Contoh:
+                    <pre>SELECT DISTINCT alamat FROM siswa;</pre>
+                    <p align="justify">Perintah di atas di gunakan untuk menampilkan kolom ALAMAT dari tabel SISWA dengan 
+                    mengabaikan nilai yang duplikat, misalnya terdapat 10 siswa dengan alamat ‘Jakarta’, 
+                    15 siswa dengan alamat ‘Bandung’, 20 siswa dengan alamat ‘Depok’, dan seterusnya, 
+                    result-set hanya menampilkan daftar alamat di antaranya ‘Jakarta’, ‘Bandung’, dan 
+                    ‘Depok’ masing-masing 1 record.</p>
+                    <b>>Perintah WHERE</b>
+                    <p align="justify">
+                      Perintah WHERE merupakan perintah dasar SQL yang di gunakan untuk mem-filter hasil SELECT dengan 
+                      mengekstrak record yang memenuhi persyaratan tertentu.
+                    </p>
+                    Contoh:
+                    <pre>SELECT kolom1, kolom2, ... FROM nama_tabel WHERE kondisi;</pre>
+                    <pre>SELECT nis, nama FROM siswa WHERE alamat='jakarta';</pre>
+                    <p align="justify">
+                      Perintah di atas di gunakan untuk mengekstraksi data (NIS dan NAMA) dari tabel SISWA dengan 
+                      kondisi “field ALAMAT berisi nilai JAKARTA”. Perintah di atas menggunakan operator sama dengan (‘=’)
+                    </p>
+                    <b>>Perintah (operator) AND, OR dan NOT</b>
+                    <p align="justify">
+                      Operator AND, OR dan NOT merupakan perintah dasar SQL yang biasanya di kombinasikan dengan perintah WHERE. 
+                      Ketiganya di gunakan untuk mem-filter record berdasarkan suatu kondisi, operator AND akan menampilkan record 
+                      apabila semua kondisi bernilai TRUE, operator OR akan menampilkan record apabila salah satu kondisi bernilai TRUE, 
+                      sedangkan operator NOT akan menampilkan record apabila semua kondisi bernilai FALSE.
+                    </p>
+                    Contoh AND:
+                    <pre>SELECT nis, nama FROM siswa WHERE alamat='Jakarta' AND tahun_lahir='2000'</pre>
+                    <p align="justify">
+                      Perintah di atas akan menampilkan record NIS dan NAMA dari tabel SISWA dengan ALAMAT di JAKARTA dan TAHUN_LAHIR “2000”, 
+                      artinya record siswa yang lahir di tahun “2000” namun tidak beralamat di “Jakarta: 
+                      atau siswa yang beralamat di “Jakarta” namaun lahir bukan pada tahun “2000” tidak 
+                      akan di tampilkan.
+                    </p>
+                    Contoh OR:
+                    <pre>SELECT nis, nama FROM siswa WHERE alamat='Jakarta' OR alamat='Bandung'</pre>
+                    <p align="justify">
+                      Perintah di atas akan menampilkan record NIS dan NAMA dari tabel SISWA dengan ALAMAT di “JAKARTA” atau di “Bandung”, 
+                      artinya record siswa yang beralamat di “Jakarta” dan di “Bandung” saja yang akan di tampilkan.
+                    </p>
+                    Contoh NOT:
+                    <pre>SELECT nis, nama FROM siswa WHERE NOT alamat='Jakarta'</pre>
+                    <p align="justify">
+                      Perintah di atas akan menampilkan semua record NIS dan NAMA dari tabel SISWA kecuali record siswa yang beralamat di ‘Jakarta’.
+                    </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container">
+        <div class="row wow fadeInUp">
+          <div class="col-lg-4 col-md-4">
+            <div class="contact-about">
+              <h3>Alien Mars</h3>
+              <div class="social-links">
+                <a href="http://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="http://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="http://www.instagram.com" class="instagram"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="info">
+              <div>
+                <i class="ion-ios-location-outline"></i>
+                <p>Mars</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-email-outline"></i>
+                <p>alien_mars@gmail.com</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-telephone-outline"></i>
+                <p>
+                  1234567891012<br>
+                  Kirim Pulsa Ya<br>
+                  Alien Juga Butuh Internet
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
